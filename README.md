@@ -1,11 +1,15 @@
-# docker-compose-testing
+
+# Docker-Compose-Testing
+
 Testing multiple containers under a single service using Docker Compose
+## API Reference
 
-We would need to import and then create a container for the same - Python Flask and Redis. NOTE: These images are pulled by docker itself once we mention it in the Dockerfile.
+#### Docker-Compose Primary Commands
 
-# Command
-$ docker-compose up
-
-(or)
-
-$ docker-compose up -d
+| Docker Command | Description                |
+| :-------- | :------------------------- |
+| `docker-compose up` | To start all your containers |
+| `docker-compose down` | To stop all your containers |
+| `docker-compose down -v` | To remove all your volumes, and networks |
+| `docker-compose start` | To start/resume all your containers. This will not build the containers from scratch |
+| `docker-compose stop` | To stop all your containers but will NOT remove any volumes neither affect those |
